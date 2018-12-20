@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/aoc2018
     docker:
-      - image: circleci/node:4.8.2
+      - image: circleci/node:10.11.0
     steps:
       - checkout
       - run:
