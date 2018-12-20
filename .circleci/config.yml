@@ -1,8 +1,23 @@
 version: 2
 jobs:
   build:
+    working_directory: ~/aoc2018
     docker:
       - image: circleci/node:4.8.2
     steps:
       - checkout
-      - run: npm test
+      - run:
+        name: update-npm
+        command: 'sudo npm install -g npm@latest'
+      - restore_cache
+        key: dependency-cache-{{ checksum "package.jsonm" }}
+      - run:
+        name: install-npm-deps
+        command: npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - run:
+        name: test
+        command: npm test
