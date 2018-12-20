@@ -10,7 +10,7 @@ jobs:
           name: update-npm
           command: 'sudo npm install -g npm@latest'
       - restore_cache:
-          key: dependency-cache-{{ checksum "package.jsonm" }}
+          key: dependency-cache-{{ checksum "package.json" }}
       - run:
           name: install-npm-deps
           command: npm install
@@ -20,4 +20,4 @@ jobs:
             - ./node_modules
       - run:
           name: test
-          command: npm test
+          command: npm run test:ci
