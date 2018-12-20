@@ -9,7 +9,7 @@ jobs:
       - run:
         name: update-npm
         command: 'sudo npm install -g npm@latest'
-      - restore_cache
+      - restore_cache:
         key: dependency-cache-{{ checksum "package.jsonm" }}
       - run:
         name: install-npm-deps
