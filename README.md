@@ -8,9 +8,9 @@ The solutions have tests along side of them to provide an easy to run way of ver
 
 ### Installation and Running
 1. Install [NodeJS](https://nodejs.org). The recommended version for this project is `10.11.0`.
-  * After installing, if you run `which node` in your [terminal](https://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything), it should print something like `/usr/local/bin/node`. If it prints nothing, there may be an issue with your Node install. First restart your terminal. If that still doesn't work, find out where on your system Node installed to, and then check your `$PATH` variable (`echo $PATH`) to see whether the Node install location is listed.
+    * After installing, if you run `which node` in your [terminal](https://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything), it should print something like `/usr/local/bin/node`. If it prints nothing, there may be an issue with your Node install. First restart your terminal. If that still doesn't work, find out where on your system Node installed to, and then check your `$PATH` variable (`echo $PATH`) to see whether the Node install location is listed.
 2. Install [Git](https://git-scm.org).
-	* As above, `which git` should print something like `/usr/local/bin/git`. If it doesn't, you can follow the same troubleshooting steps as for NodeJS.
+   * As above, `which git` should print something like `/usr/local/bin/git`. If it doesn't, you can follow the same troubleshooting steps as for NodeJS.
 3. Open your terminal and run the following commands:
 	1. `git clone https://github.com/mpaarating/aoc2018`
 		* If this fails with an error message, [have a look at this page](https://help.github.com/articles/https-cloning-errors/).
